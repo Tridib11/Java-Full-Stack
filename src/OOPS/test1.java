@@ -15,7 +15,7 @@ public class test1 {
 
         /*
 
-        new keyword does the DMA
+        new keyword does the DMA- Dynamic Memory Allocation
 
         Student  student1      =         new Student();
         compile time                     Run time
