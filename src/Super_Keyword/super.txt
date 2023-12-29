@@ -1,0 +1,6 @@
+Supuer is used to refer immediate parent class object
+
+--to access parents properties
+--to access parents functions
+--to access parents constructor
+

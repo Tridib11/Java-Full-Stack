@@ -1,0 +1,4 @@
+-- Cannot create an instance of the abstract class
+-- can have abstraction/non-abstract method
+-- can have constuctors
+

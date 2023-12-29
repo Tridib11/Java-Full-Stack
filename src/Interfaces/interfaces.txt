@@ -1,0 +1,10 @@
+--All methods are public,abstract & without implementation
+--Used to Achieve total Abstraction
+--Variables in the interface are final,public and static
+
+-----Interface is a bluerprint of a class
+
+-Multiple Inheritance
+-Total Abstraction
+
+
