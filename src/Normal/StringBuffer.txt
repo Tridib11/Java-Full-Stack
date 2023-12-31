@@ -1,0 +1,21 @@
+
+        StringBuffer(default capacity 16)
+
+        1. Thread-Safe
+        2. Synchronized
+        3. Since Java 1.0
+        4. Slower
+
+
+        StringBuilder
+
+        1. Not Thread-Safe
+        2. Not Synchronized
+        3. Since Java 1.5
+        4. Faster
+
+
+
+        1. When we want mutable String without thread safety then 'SringBuiLder' will be used
+        2. When we want a mutable Strign with thread safety then 'StringBuffer' Will be used
+        3. When we want a immutable object the String should be used
