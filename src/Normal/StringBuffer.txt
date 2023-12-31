@@ -6,7 +6,6 @@
         3. Since Java 1.0
         4. Slower
 
-
         StringBuilder
 
         1. Not Thread-Safe
