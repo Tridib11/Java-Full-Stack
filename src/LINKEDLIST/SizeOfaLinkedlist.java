@@ -1,6 +1,6 @@
-package Linked_List;
+package LINKEDLIST;
 
-public class printLinkedList {
+public class SizeOfaLinkedlist {
     public static class Node{
         int data;
         Node next;
@@ -11,32 +11,58 @@ public class printLinkedList {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
+
+    // Add First = O(1) constant time
 
     public void addFirst(int data){
-        //step 1 - create new node
+        //step 1 - create new Node
         Node newNode=new Node(data);
+        size++;
+        //if the linkedlist is empty
         if(head==null){
             head=tail=newNode;
             return;
         }
-        //step 2 - newNode next=LinkedList_head
+        //step 2 - newNode next=head
         newNode.next=head;
-        //step 3 - LinkedList_head=newNode
+        //step3 - head=newNode
         head=newNode;
     }
 
+    //Add last - O(1) constant time
+
     public void addLast(int data){
         Node newNode=new Node(data);
+        size++;
         if(head==null){
             head=tail=newNode;
-            return;
         }
         tail.next=newNode;
         tail=newNode;
     }
+
+    // adding in the middle
+
+    public void addMiddle(int idx,int data){
+        if(idx==0){
+            addFirst(data);
+            return;
+        }
+        Node newNode=new Node(data);
+        size++;
+        Node temp=head;
+        int i=0;
+        while(i<idx-1){
+            temp=temp.next;
+            i++;
+        }
+        newNode.next=temp.next;
+        temp.next=newNode;
+    }
     public void print(){
         if(head==null){
-            System.out.println("LL is empty");
+            System.out.println("LinkedList is empty");
             return;
         }
         Node temp=head;
@@ -47,8 +73,10 @@ public class printLinkedList {
         System.out.println("null");
     }
 
+
+
     public static void main(String[] args) {
-        printLinkedList ll=new printLinkedList();
+        SizeOfaLinkedlist ll=new SizeOfaLinkedlist();
         ll.print();
         ll.addFirst(2);
         ll.print();
@@ -58,5 +86,10 @@ public class printLinkedList {
         ll.print();
         ll.addLast(4);
         ll.print();
+
+        ll.addMiddle(2,10);
+        ll.print();
+
+        System.out.println("Size of the LinkedList is : "+size);
     }
 }

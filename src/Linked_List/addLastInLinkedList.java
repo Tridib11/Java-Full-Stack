@@ -18,9 +18,9 @@ public class addLastInLinkedList {
         if(head==null){
             head=tail=newNode;
         }
-        //step 2 - newNode next=head
+        //step 2 - newNode next=LinkedList_head
         newNode.next=head;
-        //step 3 - head=newNode
+        //step 3 - LinkedList_head=newNode
         head=newNode;
     }
 
