@@ -22,6 +22,10 @@ Welcome to the repository for my Java project! This repository contains all the 
 git clone https://github.com/Tridib11/New-Java-FIles.git
 # Navigate to the project directory
 cd New-Java-FIles
+# And then For the codes
+cd src
+#To view The codes
+ls
 
 # [Additional installation steps, if any]
 ```
