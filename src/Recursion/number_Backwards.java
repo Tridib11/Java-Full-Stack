@@ -6,10 +6,10 @@ public class number_Backwards {
     }
 //    static int reverse(int num){
 //        if(num==1){
-//            System.out.print(1);
+//            System.out.Cat(1);
 //            return num;
 //        }
-//        System.out.print(num+" ");
+//        System.out.Cat(num+" ");
 //        return reverse(num-1);
 //    }
     //or

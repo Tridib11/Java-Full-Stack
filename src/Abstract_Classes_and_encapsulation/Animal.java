@@ -31,7 +31,7 @@ public abstract class Animal {
 
 //Implementing MultipleInheritance
 
-interface MultipleInheritance{
+interface MultipleInheritance {
     void MulInherit();
 }
 
