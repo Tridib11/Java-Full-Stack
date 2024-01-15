@@ -5,7 +5,7 @@ public class Cat implements Printable{
     public int age;
     public Cat(){}
 
-    public void print(){
+    public void print(String s){
         System.out.println("Meow");
     }
 }

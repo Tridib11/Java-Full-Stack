@@ -1,5 +1,5 @@
 package LAmbdas;
 
 public interface Printable {
-    void print();
+    void print(String Suffix);
 }
