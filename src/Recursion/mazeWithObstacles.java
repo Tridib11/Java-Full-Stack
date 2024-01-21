@@ -2,7 +2,7 @@
 //
 //public class mazeWithObstacles {
 //    static int pathCount = 0;
-//    public static void main(String[] args) {
+//    public static void Exception_check(String[] args) {
 //        boolean[][] board={
 //                {true,false},
 //                {true,true}

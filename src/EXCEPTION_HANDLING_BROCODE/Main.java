@@ -14,7 +14,7 @@ public class Main {
             int z=x/y;
             System.out.println("result : "+z);
         }
-//        catch (Exception e){
+//        catch (Exception_check e){
 //            System.out.println("can't divide by zero");
 //        }
         catch (ArithmeticException e){
