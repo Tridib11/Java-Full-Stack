@@ -8,8 +8,8 @@ public class Main {
         catch(Exception e){
             System.out.println(e);
         }
-
-    }
+dsdsf
+    }d
 
 
     public static void vote(int age)throws InValidAgeException{
