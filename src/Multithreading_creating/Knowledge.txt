@@ -1,0 +1,14 @@
+Methods used to prevent thread execution
+
+1) yield()-pause the current execution
+2) join()-method in Java is used to pause the execution of the current thread until the
+          specified thread terminates
+3) sleep()-
+
+ts-thread scheduler
+
+States
+                              ts
+new/born------------>ready------------>Running--------------->Dead
+
+If the thread.yield()  is called it will go from running to ready state
