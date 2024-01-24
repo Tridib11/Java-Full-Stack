@@ -53,7 +53,7 @@ public class LinkedList {
 
     public int removeFist(){
         if(size==0){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return 0;
         }
         if(size==1){
@@ -69,7 +69,7 @@ public class LinkedList {
     }
     public int removeLast(){
         if(size==0){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return 0;
         }
         if(size==1){
@@ -246,7 +246,7 @@ class Solution {
 
     public void printLL(){
         if(head==null){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return;
         }
         Node temp=head;

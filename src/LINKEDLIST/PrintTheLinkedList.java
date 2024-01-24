@@ -40,7 +40,7 @@ public class PrintTheLinkedList {
     }
     public void print(){
         if(head==null){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return;
         }
         Node temp=head;

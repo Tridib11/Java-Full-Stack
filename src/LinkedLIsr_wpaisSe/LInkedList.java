@@ -62,7 +62,7 @@ public class LInkedList {
 
     public int removeFirst(){
         if(size==0){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return Integer.MIN_VALUE;
         } else if (size==1) {
             int val= head.data;
@@ -80,7 +80,7 @@ public class LInkedList {
 
     public int removeLast(){
         if(size==0){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return Integer.MIN_VALUE;
         } else if (size==1) {
             int val= head.data;
@@ -183,19 +183,19 @@ public class LInkedList {
         ll.printLL();
         ll.add(0,99);
         ll.printLL();
-        System.out.println("Size of the LinkedList is "+size);
+        System.out.println("Size of the ListNode is "+size);
         System.out.println(ll.removeFirst()+" removed");
         ll.printLL();
         System.out.println(ll.removeFirst()+" removed");
         ll.printLL();
         System.out.println(ll.removeFirst()+" removed");
         ll.printLL();
-        System.out.println("Size of the LinkedList is "+size);
+        System.out.println("Size of the ListNode is "+size);
         System.out.println(ll.removeLast()+" removed");
         ll.printLL();
         ll.addLast(24);
         ll.addLast(32);
-        System.out.println("Size of the LinkedList is "+size);
+        System.out.println("Size of the ListNode is "+size);
         ll.printLL();
         System.out.println("Element found at index "+ll.find(32));
         System.out.println("Element found at index "+ll.recSearch(32));

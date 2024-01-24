@@ -62,7 +62,7 @@ public class SizeOfaLinkedlist {
     }
     public void print(){
         if(head==null){
-            System.out.println("LinkedList is empty");
+            System.out.println("ListNode is empty");
             return;
         }
         Node temp=head;
@@ -90,6 +90,6 @@ public class SizeOfaLinkedlist {
         ll.addMiddle(2,10);
         ll.print();
 
-        System.out.println("Size of the LinkedList is : "+size);
+        System.out.println("Size of the ListNode is : "+size);
     }
 }
