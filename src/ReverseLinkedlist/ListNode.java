@@ -1,5 +1,7 @@
 package ReverseLinkedlist;
 //https://leetcode.com/problems/reverse-linked-list/description/
+
+//time o(n) space o(n)
 public class ListNode {
     int val;
     ListNode next;
