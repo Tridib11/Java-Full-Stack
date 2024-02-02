@@ -18,5 +18,8 @@ public class MyThread implements Runnable{
         MyThread t1=new MyThread();
         Thread t=new Thread(t1);
         t.start();
+
+        MyAnotherThread t2=new MyAnotherThread();
+        t2.start();
     }
 }
