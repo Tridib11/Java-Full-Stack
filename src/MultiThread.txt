@@ -1,0 +1,21 @@
+The main difference between them is that
+join() waits for a thread to die,
+ while yield() gives up the CPU to other threads of the same priority.
+
+ 1. wait() :- If any thread calls the wait() method, it causes the current thread to release the
+ lock and wait until another thread invokes the notify() or notifyAII() method for this object,
+ or a specified amount of time has elapsed.
+ Syntax : public final void wait()throws InterruptedException (waits until object is notified)
+ public final void wait(long timeout)throws InterruptedException (waits for the specified amount of time)
+
+
+ 2. notify() : This method is used to wake up a single thread and releases the object lock
+ Syntax : public final void notify()
+
+
+ 3. notifyAIl () : This method is used to wake up all threads that are in waiting state.
+ Syntax: public final void notifyAlI()
+
+
+ NOTE : To call wait(), notify() or notifyAlI() method on any object, thread should own the lock
+ of that object i.e. the thread should be inside synchronized area
