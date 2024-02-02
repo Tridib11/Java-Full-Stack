@@ -1,1 +1,3 @@
-The main difference between them is that join() waits for a thread to die, while yield() gives up the CPU to other threads of the same priority.
+The main difference between them is that
+join() waits for a thread to die,
+ while yield() gives up the CPU to other threads of the same priority.
