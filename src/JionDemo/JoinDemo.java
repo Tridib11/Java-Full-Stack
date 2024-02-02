@@ -1,18 +1,19 @@
 package JionDemo;
 
 class MyThread3 extends Thread{
-    static Thread t1;
-
-
+    Thread t1;
+    MyThread3(Thread t1){
+        this.t1=t1;
+    }
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("MyThread3 Thread Starting");
             try {
                 t1.join();
             } catch (Exception e) {
                 e.printStackTrace();
             }
+            System.out.println("MyThread3 Thread Starting");
         }
     }
 }
@@ -32,8 +33,10 @@ class DemoThread2 extends Thread{
 public class JoinDemo {
     public static void main(String[] args) throws InterruptedException {
         DemoThread2 t1=new DemoThread2();
+        MyThread3 t2=new MyThread3(t1);
         t1.start();
-        t1.join();//executed by main thread
+        t2.start();
+        t2.join();//executed by main thread
         for (int i = 0; i < 5; i++) {
             System.out.println("Main thread");
         }
