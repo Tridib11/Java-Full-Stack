@@ -1,7 +1,21 @@
 package Collection_Framework;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+
+class A implements Cloneable{
+
+    int a=10;
+    @Override
+    public A clone() {
+        try {
+            return (A) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
+}
 
 public class CollectionsDemo {
     /*
@@ -22,7 +36,7 @@ public class CollectionsDemo {
     Cloneable - Marker Interface
     A class implements the Cloneable interface to indicate to the Object.clone()
     method that it is legal for that method to make a field-for-field copy of
-    instances of that class.
+    instances of that class.(used to clone an object entirely but in a different memory address)
 
     Serializable - Marker Interface
 
@@ -36,6 +50,43 @@ public class CollectionsDemo {
         list.add(30);
         list.add(40);
         System.out.println(list);
+        System.out.println(list.get(3));
+        List<Integer> list1=new ArrayList<>();
+        list1.add(50);
+        list1.add(60);
+        list1.add(70);
+        System.out.println(list.addAll(list1));
+        System.out.println(list);
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+        //iterator
+        System.out.println("-----");
+        Iterator<Integer>it= list.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        System.out.println("----");
+        for (Integer value:list){
+            System.out.println(value);
+        }
+        System.out.println("----");
+        System.out.println(list.contains(30));
+        System.out.println("----");
+        System.out.println(list.isEmpty());
+
+        ///-----Clonable tesing-----------
+        /*
+        A object=new A();
+        System.out.println(object.hashCode());
+        System.out.println(object.a);
+        A cloneObject=object.clone();
+        object.a=20;
+        System.out.println(object.a);
+        System.out.println(cloneObject.hashCode());
+        System.out.println(cloneObject.a);
+        */
     }
 
 
