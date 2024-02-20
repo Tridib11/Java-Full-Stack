@@ -2,6 +2,8 @@ package Collection_Framework;
 
 import java.util.Vector;
 //Thread safe
+//default size=10
+// new capacity =10*2
 public class vector {
     public static void main(String[] args) {
         Vector<Integer> vector=new Vector<>();

@@ -2,12 +2,12 @@
 
                Enumerartion        Iterator                   ListIterator
 -------------------------------|----------------------|--------------------
-Appliedfor - Legacy classes    |   ALL                |       only list
+Appliedfor -   Legacy classes  |   ALL                |   only list
 -------------------------------|----------------------|---------------------
-Movement   -   Forward         |   Forward            |      Bidirection
+Movement   -   Forward         |   Forward            |   Bidirectional
 -------------------------------|----------------------|---------------------
-How to get -  elements()       | iterator()           |      listIterator()
+How to get -   elements()      |   iterator()         |   listIterator()
 object                         |                      |
 -------------------------------|----------------------|-----------------------
-Operations -  only read        | read and remove Read |      remove and replace
+Operations -   only read       | read and remove Read |   remove and replace
 
