@@ -1,6 +1,6 @@
 
 
-               Enumerartion        Iterator                   ListIterator
+               Enumerartion        Iterator               ListIterator
 -------------------------------|----------------------|--------------------
 Appliedfor -   Legacy classes  |   ALL                |   only list
 -------------------------------|----------------------|---------------------
@@ -9,5 +9,5 @@ Movement   -   Forward         |   Forward            |   Bidirectional
 How to get -   elements()      |   iterator()         |   listIterator()
 object                         |                      |
 -------------------------------|----------------------|-----------------------
-Operations -   only read       | read and remove Read |   remove and replace
+Operations -   only read       | read and remove Read |   read,remove and replace
 
