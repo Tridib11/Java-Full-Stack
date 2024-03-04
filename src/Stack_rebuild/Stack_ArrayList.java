@@ -15,6 +15,7 @@ public class Stack_ArrayList {
 
         //pop
         public static int pop(){
+            if(isEmpty()) return -1;
             int top=list.getLast();
             list.removeLast();
             return top;
@@ -22,6 +23,7 @@ public class Stack_ArrayList {
 
         //peek
         public static int peek(){
+            if(isEmpty()) return -1;
             return list.getLast();
         }
     }
