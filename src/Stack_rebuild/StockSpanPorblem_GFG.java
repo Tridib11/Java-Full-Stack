@@ -1,7 +1,7 @@
 package Stack_rebuild;
 import java.util.*;
 public class StockSpanPorblem_GFG {
-
+//https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1
     class Solution {
         static class StockSpanner {
             Stack<int[]> stack;
