@@ -1,7 +1,7 @@
 package Stack_rebuild;
 
 import java.util.Stack;
-
+//https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1
 public class NextGreaterElement_GFG {
     class Solution
     {
