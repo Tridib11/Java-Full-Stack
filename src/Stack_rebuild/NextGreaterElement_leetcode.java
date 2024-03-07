@@ -2,7 +2,7 @@ package Stack_rebuild;
 
 import java.util.Stack;
 //https://leetcode.com/problems/next-greater-element-ii/description/
-public class NextGreaterElement {
+public class NextGreaterElement_leetcode {
     class Solution {
         public int[] nextGreaterElements(int[] nums) {
             int n=nums.length;
