@@ -1,7 +1,7 @@
 package Stack_rebuild;
 
 import java.util.Stack;
-
+//https://leetcode.com/problems/valid-parentheses/
 public class ValidParenthesis {
     class Solution {
         public boolean isValid(String s) {
