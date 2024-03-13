@@ -1,5 +1,9 @@
 package Queue;
 
+/*
+add(O(1))
+remove(O(n))
+ */
 public class Queue_using_Arrays {
     static class Queue{
         static int[] arr;
