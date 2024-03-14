@@ -13,13 +13,9 @@ public class Queue_using_linkedlist {
     static class Queue{
         static Node head=null;
         static Node tail=null;
-
-
-
         public static boolean isEmpty(){
             return head==null && tail==null;
         }
-
 
         //add
         public static void add(int data){
