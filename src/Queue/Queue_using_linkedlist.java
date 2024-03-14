@@ -24,7 +24,12 @@ public class Queue_using_linkedlist {
         //add
         public static void add(int data){
             Node newNode=new Node(data);
-
+            if(head==null){
+                head=tail=newNode;
+                return;
+            }
+            tail.next=newNode;
+            tail=newNode;
         }
 
         //remove
@@ -33,14 +38,7 @@ public class Queue_using_linkedlist {
                 System.out.println("Empty queue");
                 return -1;
             }
-            int result=arr[front];
-            //last element delete
-            if(rear==front){
-                rear=front=-1;
-            }else{
-                front=(front+1)%size;
-            }
-            return result;
+
         }
 
         //peek
