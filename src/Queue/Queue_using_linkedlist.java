@@ -56,7 +56,7 @@ public class Queue_using_linkedlist {
     }
 
     public static void main(String[] args) {
-       Queue q=new Queue(3);
+       Queue q=new Queue();
         q.add(1);
         q.add(2);
         q.add(3);
