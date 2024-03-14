@@ -1,5 +1,8 @@
 package Queue;
-
+/*
+add(O(1))
+remove(O(1))
+ */
 public class Queue_using_linkedlist {
 
     static class Node{
