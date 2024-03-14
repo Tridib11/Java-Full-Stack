@@ -23,16 +23,8 @@ public class Queue_using_linkedlist {
 
         //add
         public static void add(int data){
-            if(isFull()){
-                System.out.println("Queue is full");
-                return;
-            }
-            //adding first element
-            if(front==-1){
-                front=0;
-            }
-            rear=(rear+1)%size;
-            arr[rear]=data;
+            Node newNode=new Node(data);
+
         }
 
         //remove
