@@ -38,6 +38,13 @@ public class Queue_using_linkedlist {
                 System.out.println("Empty queue");
                 return -1;
             }
+            int front= head.data;
+            if(tail==head){
+                tail=head=null;
+            }else{
+                head=head.next;
+            }
+            return front;
 
         }
 
@@ -47,7 +54,7 @@ public class Queue_using_linkedlist {
                 System.out.println("Empty queue");
                 return -1;
             }
-            return arr[front];
+            return head.data;
         }
 
     }
