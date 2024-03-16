@@ -1,0 +1,51 @@
+package Queue;
+import java.util.*;
+public class Queue_using_Stack_amortised {
+    class MyQueue {
+
+        Stack<Integer> input;
+        Stack<Integer> output;
+        int peekElement=-1;
+        public MyQueue() {
+            input = new Stack();
+            output = new Stack();
+        }
+
+        public void push(int x) {
+            if(input.isEmpty()){
+                peekElement=x;
+            }
+            input.push(x);//ye to har bar karna he
+        }
+
+        public int pop() {
+            //input -> output o(n)
+            if(output.isEmpty()){
+                while(!input.isEmpty()){
+                    output.push(input.peek());
+                    input.pop();
+                }
+            }
+            int val=output.peek(); //o(1)
+            output.pop();
+            return val;
+        }
+
+        public int peek() {
+
+        }
+
+        public boolean empty() {
+            return input.isEmpty() && output.isEmpty();
+        }
+    }
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
+}
