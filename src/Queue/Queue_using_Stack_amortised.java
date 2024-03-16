@@ -1,20 +1,18 @@
 package Queue;
+
+//https://leetcode.com/problems/implement-queue-using-stacks/
 import java.util.*;
 public class Queue_using_Stack_amortised {
     class MyQueue {
 
         Stack<Integer> input;
         Stack<Integer> output;
-        int peekElement=-1;
         public MyQueue() {
             input = new Stack();
             output = new Stack();
         }
 
         public void push(int x) {
-            if(input.isEmpty()){
-                peekElement=x;
-            }
             input.push(x);//ye to har bar karna he
         }
 
@@ -32,7 +30,13 @@ public class Queue_using_Stack_amortised {
         }
 
         public int peek() {
-
+            if(output.isEmpty()){
+                while(!input.isEmpty()){
+                    output.push(input.peek());
+                    input.pop();
+                }
+            }
+            return output.peek();
         }
 
         public boolean empty() {
