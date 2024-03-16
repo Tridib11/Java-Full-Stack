@@ -1,4 +1,5 @@
 package Queue;
+//https://leetcode.com/problems/first-unique-character-in-a-string/
 import java.util.*;
 public class First_unique_charavter_in_a_String {
     class Solution {
