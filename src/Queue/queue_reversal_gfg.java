@@ -1,7 +1,7 @@
 package Queue;
 import java.util.*;
 //https://www.geeksforgeeks.org/problems/queue-reversal/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
-public class queue_reversal {
+public class queue_reversal_gfg {
     static class GfG{
         //Function to reverse the queue.
         public Queue<Integer> rev(Queue<Integer> q){
