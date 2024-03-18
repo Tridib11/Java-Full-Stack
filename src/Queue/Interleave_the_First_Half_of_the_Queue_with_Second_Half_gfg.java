@@ -1,7 +1,7 @@
 package Queue;
 import java.util.*;
-public class Interleave_the_First_Half_of_the_Queue_with_Second_Half {
-
+public class Interleave_the_First_Half_of_the_Queue_with_Second_Half_gfg {
+    //https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/0
     class Solution {
         public static ArrayList<Integer> rearrangeQueue(int N, Queue<Integer> q) {
             // code here
