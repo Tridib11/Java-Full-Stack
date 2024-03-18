@@ -1,2 +1,3 @@
 Dequeue - verb,action,method - to remove something from the queue
+enqueue - add element in the queue
 deque - double ended queue
