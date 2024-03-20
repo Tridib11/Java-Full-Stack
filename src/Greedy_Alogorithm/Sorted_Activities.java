@@ -9,7 +9,17 @@ public class Sorted_Activities {
         int maxAct=0;
         ArrayList<Integer> ans=new ArrayList<>();
 
-        //
+        //1st activity
+        maxAct=1;
+        ans.add(0);
+        int lastEnd=end[0];
+        for(int i=0;i<end.length;i++){
+            if(start[i]>=lastEnd){
+                maxAct++;
+                ans.add(i);
+                lastEnd=end[i];
+            }
+        }
     }
 
 }
