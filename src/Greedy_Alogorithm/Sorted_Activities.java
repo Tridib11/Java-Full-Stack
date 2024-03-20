@@ -20,6 +20,11 @@ public class Sorted_Activities {
                 lastEnd=end[i];
             }
         }
+        System.out.println("MAx activities = "+maxAct);
+        for (int i = 0; i < ans.size(); i++) {
+            System.out.print("A"+ans.get(i)+" ");
+        }
+        System.out.println();
     }
 
 }
