@@ -1,5 +1,8 @@
 package Greedy_Alogorithm;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class unSorted_Activities {
     public static void main(String[] args) {
         int[] start={1,3,0,5,8,5};
@@ -10,6 +13,6 @@ public class unSorted_Activities {
             activities[i][1]=start[1];
             activities[i][2]=end[1];
         }
-
+        Arrays.sort(activities, Comparator.comparingDouble(coloumn -> coloumn[2]));
     }
 }
