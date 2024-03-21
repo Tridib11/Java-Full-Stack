@@ -11,15 +11,18 @@ public class String_sorting {
         musicList.add("kaise hua");
         musicList.add("aeisa desh he mera");
         musicList.add("koi lauta do wo pyare pyare din");
-        for(String temp:musicList){
-            System.out.println(temp);
-        }
+
+        iterateList(musicList);
         System.out.println("---------------");
 //        Collections.sort(musicList, String.CASE_INSENSITIVE_ORDER);
         Collections.sort(musicList);
-        for(String temp:musicList){
+        iterateList(musicList);
+
+    }
+
+    private static void iterateList(ArrayList<String> musicList) {
+        for(String temp: musicList){
             System.out.println(temp);
         }
-
     }
 }
