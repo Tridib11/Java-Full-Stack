@@ -10,6 +10,8 @@ public class String_sorting {
         musicList.add("Kaise hua");
         musicList.add("aeisa desh he mera");
         musicList.add("koi lauta do wo pyare pyare din");
-
+        for(String music:musicList){
+            System.out.println(music);
+        }
     }
 }
