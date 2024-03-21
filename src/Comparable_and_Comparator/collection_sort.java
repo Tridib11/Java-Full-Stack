@@ -12,13 +12,17 @@ public class collection_sort {
         integerList.add(0);
         integerList.add(5);
         integerList.add(4);
-        for(int num:integerList){
-            System.out.println(num);
-        }
+
+        iterateList(integerList);
 
         System.out.println("----------");
         Collections.sort(integerList);
-        for(int num:integerList){
+
+        iterateList(integerList);
+    }
+
+    private static void iterateList(ArrayList<Integer> integerList) {
+        for(int num: integerList){
             System.out.println(num);
         }
     }
