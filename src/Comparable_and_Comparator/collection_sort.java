@@ -1,6 +1,7 @@
 package Comparable_and_Comparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class collection_sort {
     public static void main(String[] args) {
@@ -15,5 +16,10 @@ public class collection_sort {
             System.out.println(num);
         }
 
+        System.out.println("----------");
+        Collections.sort(integerList);
+        for(int num:integerList){
+            System.out.println(num);
+        }
     }
 }
