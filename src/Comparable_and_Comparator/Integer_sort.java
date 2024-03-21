@@ -5,7 +5,7 @@ import Comparable_myutils.MyUtils;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class collection_sort {
+public class Integer_sort {
     public static void main(String[] args) {
         ArrayList<Integer> integerList=new ArrayList<>();
         integerList.add(2);
@@ -15,12 +15,12 @@ public class collection_sort {
         integerList.add(5);
         integerList.add(4);
 
-        MyUtils.iterateList(integerList);
+        MyUtils.iterateIntegerList(integerList);
 
         System.out.println("----------");
         Collections.sort(integerList);
 
-        MyUtils.iterateList(integerList);
+        MyUtils.iterateIntegerList(integerList);
     }
 
 
