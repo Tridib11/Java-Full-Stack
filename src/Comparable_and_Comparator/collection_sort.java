@@ -11,7 +11,9 @@ public class collection_sort {
         integerList.add(0);
         integerList.add(5);
         integerList.add(4);
-
+        for(int num:integerList){
+            System.out.println(num);
+        }
 
     }
 }
