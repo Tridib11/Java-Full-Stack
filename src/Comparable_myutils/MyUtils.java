@@ -8,9 +8,5 @@ public class MyUtils {
             System.out.println(num);
         }
     }
-    public static void iterateStringList(ArrayList<String> musicList) {
-        for(String temp: musicList){
-            System.out.println(temp);
-        }
-    }
+
 }
