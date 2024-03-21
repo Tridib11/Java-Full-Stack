@@ -14,11 +14,11 @@ public class String_sorting {
         musicList.add("aeisa desh he mera");
         musicList.add("koi lauta do wo pyare pyare din");
 
-        MyUtils.iterateStringList(musicList);
+        MyUtils.iterateList(musicList);
         System.out.println("---------------");
 //        Collections.sort(musicList, String.CASE_INSENSITIVE_ORDER);
         Collections.sort(musicList);
-        MyUtils.iterateStringList(musicList);
+        MyUtils.iterateList(musicList);
 
     }
 
