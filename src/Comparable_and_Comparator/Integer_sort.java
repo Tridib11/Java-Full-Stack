@@ -15,12 +15,12 @@ public class Integer_sort {
         integerList.add(5);
         integerList.add(4);
 
-        MyUtils.iterateIntegerList(integerList);
+        MyUtils.iterateList(integerList);
 
         System.out.println("----------");
         Collections.sort(integerList);
 
-        MyUtils.iterateIntegerList(integerList);
+        MyUtils.iterateList(integerList);
     }
 
 
