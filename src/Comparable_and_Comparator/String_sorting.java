@@ -1,6 +1,6 @@
 package Comparable_and_Comparator;
 
-import Comparable_myutils.MyStringUtils;
+import Comparable_myutils.MyUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,11 +14,11 @@ public class String_sorting {
         musicList.add("aeisa desh he mera");
         musicList.add("koi lauta do wo pyare pyare din");
 
-        MyStringUtils.iterateList(musicList);
+        MyUtils.iterateStringList(musicList);
         System.out.println("---------------");
 //        Collections.sort(musicList, String.CASE_INSENSITIVE_ORDER);
         Collections.sort(musicList);
-        MyStringUtils.iterateList(musicList);
+        MyUtils.iterateStringList(musicList);
 
     }
 
