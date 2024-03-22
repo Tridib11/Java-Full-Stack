@@ -30,8 +30,18 @@ public class Songs {
     public Integer getYear() {
         return year;
     }
-
     public void setYear(Integer year) {
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return "Songs{" +
+                "title='" + title + '\'' +
+                ", artist='" + artist + '\'' +
+                ", year=" + year +
+                '}';
+    }
+
+
 }
