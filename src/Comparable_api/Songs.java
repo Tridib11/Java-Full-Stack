@@ -5,6 +5,12 @@ public class Songs {
     private String artist;
     private Integer year;
 
+    public Songs(String title, String artist, Integer year) {
+        this.title=title;
+        this.artist=artist;
+        this.year=year;
+    }
+
     public String getTitle() {
         return title;
     }
