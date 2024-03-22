@@ -1,6 +1,7 @@
 package Comparable_and_Comparator;
 
 import Comparable_api.Songs;
+import Comparable_myutils.MyUtils;
 
 import java.util.ArrayList;
 
@@ -14,6 +15,12 @@ public class Mp4 {
 
 
         ArrayList<Songs> musicList=new ArrayList<>();
+        musicList.add(song1);
+        musicList.add(song2);
+        musicList.add(song3);
+        musicList.add(song4);
+        musicList.add(song5);
+        MyUtils.iterateList(musicList);
 
     }
 }
