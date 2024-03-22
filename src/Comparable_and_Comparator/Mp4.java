@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Mp4 {
     public static void main(String[] args) {
-        ArrayList<Songs> musicList=new ArrayList<Songs>();
+        ArrayList<Songs> musicList=new ArrayList<>();
 
     }
 }
