@@ -11,7 +11,7 @@ public class MainClass {
         students.add(new Students(23,"Ram"));
         students.add(new Students(35,"Shyam"));
         students.add(new Students(83,"Aman"));
-        students.add(new Students(13,"Rohit"));
+        students.add(new Students(13,"Ram"));
         students.add(new Students(13,"Anuj"));
         Collections.sort(students,new SortByNameThenMarks());
         students.forEach(System.out::println);
