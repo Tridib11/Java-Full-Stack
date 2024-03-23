@@ -1,6 +1,6 @@
 package Comparators_and_Comparable_Anuj;
 
-public class Students {
+public class Students implements Comparable<Students> {
     int marks;
     String name;
     public Students(int marks,String name){
@@ -31,5 +31,10 @@ public class Students {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compareTo(Students o) {
+
     }
 }
