@@ -3,7 +3,7 @@ package Greedy_Alogorithm;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-
+//https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
 class meetings{
         int start,end,pos;
         meetings(int start,int end,int pos){
@@ -37,11 +37,21 @@ public class Nmeetings_in_one_room
     public static int maxMeetings(int start[], int end[], int n)
     {
         // add your code here
-        ArrayList<meeting> list=new ArrayList<>();
+        ArrayList<meetings> list=new ArrayList<>();
         for(int i=0;i<n;i++){
-            list.add(new meeting(start[i],end[i],i+1 ));
+            list.add(new meetings(start[i],end[i],i+1 ));
+            }
             meetingComparator com=new meetingComparator();
             Collections.sort(list,com);
-        }
+            ArrayList<Integer> ans=new ArrayList<>();
+            ans.add(list.get(0).pos);
+            int limit=list.get(0).end;
+            for (int j = 1; j <n ; j++) {
+                if(limit<list.get(j).start){
+                    ans.add(list.get(j).pos);
+                    limit=list.get(j).end;
+                }
+            }
+            return ans.size();
     }
 }
