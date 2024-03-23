@@ -1,6 +1,6 @@
 package Comparators_and_Comparable_Anuj;
 
-public class Students implements Comparable<Students> {
+public class Students  {
     int marks;
     String name;
     public Students(int marks,String name){
@@ -33,7 +33,7 @@ public class Students implements Comparable<Students> {
         this.name = name;
     }
 
-    @Override
+
     public int compareTo(Students obj) {
         //for Decreasing
 
@@ -43,8 +43,10 @@ public class Students implements Comparable<Students> {
 
         //for increasing
 
-        if(this.marks > obj.marks) return 1;
-        else if (this.marks < obj.marks) return -1;
-        return this.name.compareTo(obj.name);
+//        if(this.marks > obj.marks) return 1;
+//        else if (this.marks < obj.marks) return -1;
+//        return this.name.compareTo(obj.name);
+
+        return this.marks- obj.marks;
     }
 }
