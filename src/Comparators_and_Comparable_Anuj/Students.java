@@ -36,10 +36,13 @@ public class Students implements Comparable<Students> {
     @Override
     public int compareTo(Students obj) {
         //for Decreasing
+
 //        if(this.marks > o.marks) return -1;
 //        else if (this.marks < o.marks) return 1;
 //        return 0;
+
         //for increasing
+
         if(this.marks > obj.marks) return 1;
         else if (this.marks < obj.marks) return -1;
         return 0;
