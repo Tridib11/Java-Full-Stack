@@ -1,6 +1,7 @@
 package Comparators_and_Comparable_Anuj;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MainClass {
@@ -11,6 +12,7 @@ public class MainClass {
         students.add(new Students(13,"Kisan"));
         students.add(new Students(29,"Rahul"));
         students.add(new Students(1,"Pramanik"));
+        Collections.sort(students);
         students.forEach(System.out::println);
 
     }
