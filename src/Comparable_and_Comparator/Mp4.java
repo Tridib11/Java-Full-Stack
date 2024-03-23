@@ -4,6 +4,7 @@ import Comparable_api.Songs;
 import Comparable_myutils.MyUtils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Mp4 {
     public static void main(String[] args) {
@@ -21,6 +22,7 @@ public class Mp4 {
         musicList.add(song4);
         musicList.add(song5);
         MyUtils.iterateList(musicList);
+        Collections.sort(musicList);
 
     }
 }
