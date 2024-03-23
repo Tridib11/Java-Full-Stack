@@ -11,6 +11,7 @@ public class MainClass {
         students.add(new Students(13,"Kisan"));
         students.add(new Students(29,"Rahul"));
         students.add(new Students(1,"Pramanik"));
+        students.forEach(System.out::println);
 
     }
 }
