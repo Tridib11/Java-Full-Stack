@@ -1,5 +1,5 @@
 package Greedy_Alogorithm;
-
+//https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 import java.util.Arrays;
 
 class Job {
