@@ -1,6 +1,8 @@
 package Greedy_restart_tuf;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 
 class Meeting{
@@ -35,5 +37,11 @@ public class N_meetings_in_one_room {
         for(int i=0;i<n;i++){
             meet.add(new Meeting(start[i],end[i],i+1 ));
         }
+        MeetingComparator mc= new MeetingComparator();
+        Collections.sort(meet,mc);
+        ArrayList<Integer> answer=new ArrayList<>();
+        answer.add(meet.get(0).pos);
+        int limit=meet.get(0).end;
+
     }
 }
