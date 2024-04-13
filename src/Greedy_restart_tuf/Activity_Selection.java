@@ -1,6 +1,7 @@
 package Greedy_restart_tuf;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 class Activity {
@@ -16,7 +17,7 @@ class Activity {
     }
 }
 
-class activityComparator implements Comparator<Activity>{
+class ActivityComparator implements Comparator<Activity>{
 
     @Override
     public int compare(Activity o1, Activity o2) {
@@ -25,7 +26,10 @@ class activityComparator implements Comparator<Activity>{
         } else if (o1.end>o2.end) {
             return 1;
         }
-        else if(o1.pos <)
+        else if(o1.pos <o2.pos){
+            return -1;
+        }
+        return 1;
     }
 }
 public class Activity_Selection {
@@ -37,5 +41,10 @@ public class Activity_Selection {
         for(int i=0;i<n;i++){
             meet.add(new Activity(start[i],end[i],i+1));
         }
+        ActivityComparator ac=new ActivityComparator();
+        Collections.sort(meet,ac);
+        ArrayList<Integer> ans=new ArrayList<>();
+        ans.add(meet.get(0).pos);
+
     }
 }
