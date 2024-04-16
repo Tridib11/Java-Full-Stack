@@ -16,8 +16,18 @@ public class Fractional_KNapsack {
         //ascending order
         Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
         int capacity=W;
+        int finalValue=0;
         for(int i=ratio.length-1;i>=0;i--){
             int idx=(int)ratio[i][0];
+            if(capacity>=weight[idx]){
+                finalValue+=val[idx];
+                capacity-=weight[idx];
+            }else{
+                finalValue+=(ratio[i][1]*capacity);
+                capacity=0;
+                break;
+            }
         }
+        System.out.println("Maximum total value "+ finalValue);
     }
 }
