@@ -2,8 +2,8 @@ package Greedy_Alpha;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
-public class Max_length_of_Pair_Chain {
+//https://leetcode.com/problems/maximum-length-of-pair-chain/description/
+public class Max_length_of_Pair_Chain_Leetcode {
     static int[][] demo={{5,24}, {39, 60}, {5, 28}, {27, 40}, {50, 90}};
     public int findLongestChain(int[][] pairs) {
         Arrays.sort(pairs, Comparator.comparingDouble(o->o[1]));
