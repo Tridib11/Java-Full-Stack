@@ -3,7 +3,7 @@ package Greedy_Alpha;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1
 class Solution_MIN_COINS {
     static List<Integer> minPartition(int amount)
     {
