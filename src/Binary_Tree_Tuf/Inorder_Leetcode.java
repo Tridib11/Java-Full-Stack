@@ -4,26 +4,26 @@ import java.util.*;
  * Definition for a binary tree node.
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
  */
-  class TreeNode {
+  class TreeInNode {
       int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
+      TreePreNode left;
+      TreePreNode right;
+      TreeInNode() {}
+      TreeInNode(int val) { this.val = val; }
+      TreeInNode(int val, TreePreNode left, TreePreNode right) {
           this.val = val;
           this.left = left;
           this.right = right;
       }
   }
 
- class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
+ class Solution_InOrder {
+    public List<Integer> inorderTraversal(TreePreNode root) {
         List<Integer> res=new ArrayList<>();
         inorder(root,res);
         return res;
     }
-    public void inorder(TreeNode node,List<Integer> res){
+    public void inorder(TreePreNode node, List<Integer> res){
         if(node==null){
             return;
         }
