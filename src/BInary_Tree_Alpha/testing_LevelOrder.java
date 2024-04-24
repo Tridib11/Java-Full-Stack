@@ -7,28 +7,28 @@ import java.util.List;
 import java.util.Queue;
 
 public class testing_LevelOrder {
-    static class Node {
+    static class TreeNode {
         int data;
-        Node left;
-        Node right;
-        Node (int data){
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int data){
             this.data=data;
             this.left=null;
             this.right=null;
         }
     }
 
-    static List<List<Integer>> levelOrder(Node root){
+    static List<List<Integer>> levelOrder(TreeNode root){
         List<List<Integer>> result=new ArrayList<>();
         if(root==null){
             return result;
         }
-        Queue<Node> q=new LinkedList<>();
+        Queue<TreeNode> q=new LinkedList<>();
         q.add(root);
         q.add(null);
         List<Integer> currentLevel = new ArrayList<>();
         while(!q.isEmpty()){
-            Node currNode=q.remove();
+            TreeNode currNode=q.remove();
             if(currNode==null){
                 result.add(currentLevel);
                 currentLevel=new ArrayList<>();
@@ -45,6 +45,7 @@ public class testing_LevelOrder {
                 }
             }
         }
-
+        result.add(currentLevel);
+        return result;
     }
 }
