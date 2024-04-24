@@ -1,6 +1,8 @@
 package BInary_Tree_Alpha;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class Level_order_Traversal {
@@ -17,6 +19,7 @@ public class Level_order_Traversal {
     }
 
     static void LevelOrder(Node root){
+        List<Integer> result = new ArrayList<>();
         if(root==null){
             return;
         }
@@ -26,7 +29,7 @@ public class Level_order_Traversal {
         while(!q.isEmpty()){
             Node currNode=q.remove();
             if(currNode==null){
-                System.out.println();
+//                System.out.println();
                 if(q.isEmpty()){
                     break;
                 }
@@ -34,7 +37,7 @@ public class Level_order_Traversal {
                    q.add(null);
                 }
             }else{
-                System.out.println(currNode.data+" ");
+                result.add(currNode.data);
                 if(currNode.left!=null){
                     q.add(currNode.left);
                 }
@@ -48,7 +51,7 @@ public class Level_order_Traversal {
 
     public static void main(String[] args) {
         int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        
+
     }
 
 
