@@ -1,6 +1,11 @@
 package BInary_Tree_Alpha;
 
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class testing_LevelOrder {
     static class Node {
         int data;
@@ -11,5 +16,15 @@ public class testing_LevelOrder {
             this.left=null;
             this.right=null;
         }
+    }
+
+    static List<List<Integer>> levelOrder(Node root){
+        List<List<Integer>> result=new ArrayList<>();
+        if(root==null){
+            return result;
+        }
+        Queue<Node> q=new LinkedList<>();
+
+
     }
 }
