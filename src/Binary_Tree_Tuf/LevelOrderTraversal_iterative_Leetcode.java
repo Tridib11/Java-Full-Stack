@@ -12,7 +12,7 @@ class TreeNode {
         this.right = right;
     }
 }
-public class LevelOrderTraversal_Leetcode {
+public class LevelOrderTraversal_iterative_Leetcode {
     public List<List<Integer>> levelOrder(TreeNode root) {
 
     }
