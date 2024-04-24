@@ -24,7 +24,11 @@ public class testing_LevelOrder {
             return result;
         }
         Queue<Node> q=new LinkedList<>();
+        q.add(root);
+        q.add(null);
+        while(!q.isEmpty()){
 
+        }
 
     }
 }
