@@ -10,6 +10,21 @@ public class Diameter_of_a_binaryTree {
             this.left=null;
             this.right=null;
         }
+        public int diameterOfBinaryTree(TreeNode root) {
+            int[] diameter=new int[1];
+            height(root,diameter);
+            return diameter[0];
+        }
+
+        private int height(TreeNode root, int[] diameter) {
+            if(root==null){
+                return 0;
+            }
+
+            int leftHeight=height(root.left,diameter);
+            int rightHeight=height(root.right,diameter);
+
+        }
 
     }
 }
