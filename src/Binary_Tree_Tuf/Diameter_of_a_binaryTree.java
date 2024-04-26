@@ -20,11 +20,10 @@ public class Diameter_of_a_binaryTree {
             if(root==null){
                 return 0;
             }
-
             int leftHeight=height(root.left,diameter);
             int rightHeight=height(root.right,diameter);
             diameter[0]=Math.max(diameter[0],leftHeight+rightHeight);
-            return 1+
+            return 1+Math.max(leftHeight,rightHeight);
         }
 
     }
