@@ -23,7 +23,8 @@ public class Diameter_of_a_binaryTree {
 
             int leftHeight=height(root.left,diameter);
             int rightHeight=height(root.right,diameter);
-
+            diameter[0]=Math.max(diameter[0],leftHeight+rightHeight);
+            return 1+
         }
 
     }
