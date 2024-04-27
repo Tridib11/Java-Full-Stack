@@ -27,6 +27,13 @@ public class SubTree_of_another_tree {
         }else if(root==null || subRoot==null || root.data!=subRoot.data){
             return false;
         }
+        if(!isSame(root.left,subRoot.left)){
+            return false;
+        }
+        if(!isSame(root.right,subRoot.right)){
+            return false;
+        }
+        return true;
 
     }
 }
