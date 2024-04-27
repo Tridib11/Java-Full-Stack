@@ -34,6 +34,5 @@ public class SubTree_of_another_tree {
             return false;
         }
         return true;
-
     }
 }
