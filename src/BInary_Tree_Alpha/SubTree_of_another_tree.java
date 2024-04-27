@@ -24,6 +24,9 @@ public class SubTree_of_another_tree {
     private static boolean isSame(Node root, Node subRoot) {
         if(root==null && subRoot==null){
             return true;
+        }else if(root==null || subRoot==null || root.data!=subRoot.data){
+            return false;
         }
+
     }
 }
