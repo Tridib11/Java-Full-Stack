@@ -5,6 +5,25 @@ public class SubTree_of_another_tree {
         int data;
         Node left;
         Node right;
+        Node(int data){
+            this.data=data;
+            this.right=null;
+            this.right=null;
+        }
+    }
 
+    public static boolean isSubTree(Node root,Node subRoot){
+        if(root.data==subRoot.data){
+            if(isSame(root,subRoot)){
+                return true;
+            }
+        }
+        return isSubTree(root.left,subRoot) || isSubTree(root.right,subRoot);
+    }
+
+    private static boolean isSame(Node root, Node subRoot) {
+        if(root==null && subRoot==null){
+            return true;
+        }
     }
 }
