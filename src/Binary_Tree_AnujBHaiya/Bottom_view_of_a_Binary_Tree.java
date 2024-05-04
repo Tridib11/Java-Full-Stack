@@ -26,6 +26,7 @@ public class Bottom_view_of_a_Binary_Tree {
         public ArrayList <Integer> bottomView(Node root)
         {
             Queue<Pair> queue=new ArrayDeque<>();
+            Map<Integer,Integer> map=new TreeMap<>();
 
         }
     }
