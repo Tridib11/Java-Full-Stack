@@ -28,9 +28,19 @@ public class Top_View_of_a_Binary_Tree {
 
     class Solution {
         static ArrayList<Integer> topView(Node root) {
-            Queue<Integer> queue = new ArrayDeque<>();
+            Queue<Pair> queue = new ArrayDeque<>();
             Map<Integer, Integer> map = new TreeMap<>(); //used to store data in sorted order of keys
+            queue.add(new Pair(0,root));
+            while(!queue.isEmpty()){
+                Pair curr=queue.poll();
+                if(!map.containsKey(curr.horizontal_Distance)){
+                    map.put(curr.horizontal_Distance, curr.node.data);
+                }
+                if(curr.node.left!=null){
+                    queue.add(new Pair(curr.horizontal_Distance-1,curr.node.left ));
+                }
 
+            }
         }
     }
 }
