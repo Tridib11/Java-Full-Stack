@@ -1,5 +1,5 @@
 package BInary_Tree_Alpha;
-
+//
 import java.util.*;
 
 public class Top_View_of_a_Binary_Tree {
@@ -39,8 +39,16 @@ public class Top_View_of_a_Binary_Tree {
                 if(curr.node.left!=null){
                     queue.add(new Pair(curr.horizontal_Distance-1,curr.node.left ));
                 }
-
+                if(curr.node.right!=null){
+                    queue.add(new Pair(curr.horizontal_Distance+1,curr.node.right));
+                }
             }
+
+            ArrayList<Integer> ans=new ArrayList<>();
+            for(Map.Entry<Integer,Integer> entry:map.entrySet()){
+                ans.add(entry.getValue());
+            }
+            return ans;
         }
     }
 }
