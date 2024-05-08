@@ -1,6 +1,6 @@
 package BInary_Tree_Alpha;
 import java.util.*;
-public class kth_level_of_A_binaryTree {
+public class kth_level_of_A_binaryTree_Preorder {
 
     static class Node{
         int data;
@@ -20,7 +20,7 @@ public class kth_level_of_A_binaryTree {
         root.left.right = new Node(5);
         root.right.right = new Node(6);
 
-        int k = 2; // Specify the level you want to find
+        int k = 3; // Specify the level you want to find
         List<Integer> result = kthLevelNodes(root, k);
         System.out.println("Nodes at level " + k + ": " + result);
     }
