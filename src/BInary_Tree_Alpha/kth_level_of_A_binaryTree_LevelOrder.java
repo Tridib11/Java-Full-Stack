@@ -3,6 +3,7 @@ package BInary_Tree_Alpha;
 import java.util.ArrayList;
 import java.util.List;
 
+import static BInary_Tree_Alpha.kth_level_of_A_binaryTree_Preorder.kthLevelNodeHelper;
 import static BInary_Tree_Alpha.kth_level_of_A_binaryTree_Preorder.kthLevelNodes;
 
 public class kth_level_of_A_binaryTree_LevelOrder {
@@ -29,10 +30,14 @@ public class kth_level_of_A_binaryTree_LevelOrder {
         System.out.println("Nodes at level " + k + ": " + result);
     }
 
-    public List<Integer> kthLevelNodes(Node root,int k){
+    public static List<Integer> kthLevelNodes(Node root,int k){
         List<Integer> result=new ArrayList<>();
         kthLevelNodeHelper(root,k,1,result);
         return result;
+    }
+
+    private static void kthLevelNodeHelper(Node root,int k,int currentLevel,List<Integer> result){
+
     }
 
 
