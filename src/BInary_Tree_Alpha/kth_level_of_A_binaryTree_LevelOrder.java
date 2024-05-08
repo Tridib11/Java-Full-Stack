@@ -1,10 +1,10 @@
 package BInary_Tree_Alpha;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static BInary_Tree_Alpha.kth_level_of_A_binaryTree_Preorder.kthLevelNodeHelper;
-import static BInary_Tree_Alpha.kth_level_of_A_binaryTree_Preorder.kthLevelNodes;
+//import java.util.ArrayList;
+//import java.util.LinkedList;
+//import java.util.List;
+//import java.util.Queue;
+import java.util.*;
 
 public class kth_level_of_A_binaryTree_LevelOrder {
     static class Node{
@@ -32,12 +32,29 @@ public class kth_level_of_A_binaryTree_LevelOrder {
 
     public static List<Integer> kthLevelNodes(Node root,int k){
         List<Integer> result=new ArrayList<>();
-        kthLevelNodeHelper(root,k,1,result);
+        if(root==null) return result;
+        Queue<Node> queue=new LinkedList<>();
+        queue.offer(root);
+
+        int currentLevel=1;
+        while(!queue.isEmpty()){
+            int currentLevelSize= queue.size();
+            if(currentLevel==k){
+                for(int i=0;i<currentLevelSize;i++){
+                    Node node=queue.poll();
+                    result.add(node.data);
+                }
+                return result;
+            }
+
+            for(int i=0;i<currentLevelSize;i++){
+                Node node=queue.poll();
+                if(node.left!=null) queue.offer(node.left);
+                if(node.right!=null) queue.offer(node.right);
+            }
+            currentLevel++;
+        }
         return result;
-    }
-
-    private static void kthLevelNodeHelper(Node root,int k,int currentLevel,List<Integer> result){
-
     }
 
 
