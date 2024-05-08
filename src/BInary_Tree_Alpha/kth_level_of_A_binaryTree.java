@@ -26,6 +26,12 @@ public class kth_level_of_A_binaryTree {
     }
 
     private static List<Integer> kthLevelNodes(Node root, int k) {
+        List<Integer> result=new ArrayList<>();
+        kthLevelNodeHelper(root,k,1,result);
+        return result;
+    }
+
+    private static void kthLevelNodeHelper(Node root, int k, int i, List<Integer> result) {
     }
 
 
