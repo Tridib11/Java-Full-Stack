@@ -31,7 +31,16 @@ public class kth_level_of_A_binaryTree {
         return result;
     }
 
-    private static void kthLevelNodeHelper(Node root, int k, int i, List<Integer> result) {
+    private static void kthLevelNodeHelper(Node root, int k, int currentLevel, List<Integer> result) {
+        if(root==null){
+            return;
+        }
+        if(currentLevel==k){
+            result.add(root.data);
+            return;
+        }
+        kthLevelNodeHelper(root.left,k,currentLevel+1,result);
+        kthLevelNodeHelper(root.right,k,currentLevel+1,result);
 
     }
 
